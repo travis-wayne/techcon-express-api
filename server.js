@@ -29,7 +29,10 @@ const connectMongodb = async () => {
 
 app.use(
   cors({
-    origin: "https://techcon.netlify.app",
+    origin: [
+      "https://techcon.netlify.app", 
+      "https://techcon.com.ng"
+    ],
     credentials: true,
   })
 );
